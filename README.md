@@ -2,7 +2,7 @@
 
 <div align="center">
     <p>
-        <span style="font-size:70px;"> 🔥📓🔥</span>
+        <img src="Notebook.png" alt="Logo" width="80" height="80" title="Logo del proyecto;">
     </p>
 </div>
 
