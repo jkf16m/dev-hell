@@ -11,9 +11,11 @@ class OperationTypeBitFlag(enum.IntFlag):
 @dataclasses.dataclass
 class Permission:
     """
-    Data structure to represent 
+    Data structure to represent permissions assigned to either an user or a role
     """
-    user_id: int
+    id: int
+    user_id: int|None
+    role_id: int|None
     module: int
     operation_type: OperationTypeBitFlag
 
@@ -26,3 +28,4 @@ def validate_permission(permission: Permission, operation_types: list[OperationT
             return False
     
     return True
+
